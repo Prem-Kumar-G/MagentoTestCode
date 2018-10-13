@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class MagentoTest {
@@ -14,7 +15,7 @@ public class MagentoTest {
 	public  void posCredentials() {
 
 	String url = "https://magento.com/";
-	WebDriver  d = new ChromeDriver();
+	WebDriver  d = new FirefoxDriver();
 	d.manage().window().maximize();
 	d.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
