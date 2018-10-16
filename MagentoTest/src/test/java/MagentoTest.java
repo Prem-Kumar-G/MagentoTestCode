@@ -15,7 +15,7 @@ public class MagentoTest {
 	public  void posCredentials() {
 
 	String url = "https://magento.com/";
-	WebDriver  d = new FirefoxDriver();
+	WebDriver  d = new ChromeDriver();
 	d.manage().window().maximize();
 	d.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
